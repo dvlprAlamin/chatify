@@ -11,7 +11,7 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import TabOneScreen from '../screens/TabOneScreen';
+import ChatScreen from '../screens/ChatScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import { MainTabParamList, ChatsParamList,StatusParamList,CallsParamList } from '../types';
 
@@ -40,7 +40,7 @@ export default function BottomTabNavigator() {
       /> 
       <MainTab.Screen
         name="Chats"
-        component={TabOneNavigator}
+        component={ChatScreen}
       />
       <MainTab.Screen
         name="Status"
@@ -69,7 +69,7 @@ function TabOneNavigator() {
     <TabOneStack.Navigator>
       <TabOneStack.Screen
         name="Chats"
-        component={TabOneScreen}
+        component={ChatScreen}
         options={{ headerTitle: 'Tab One Title' }}
       />
     </TabOneStack.Navigator>

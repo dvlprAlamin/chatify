@@ -25,3 +25,19 @@ export type StatusParamList = {
 export type CallsParamList = {
   Calls: undefined;
 };
+export type User = {
+  id: String,
+  name:String,
+  imageURL:String
+}
+export type Message = {
+  id: String,
+  content: String,
+  createdAt: Number
+}
+
+export type ChatRoom = {
+  id: String,
+  user: [User],
+  lastMessage: Message
+}
